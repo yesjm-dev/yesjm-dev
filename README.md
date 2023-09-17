@@ -9,7 +9,7 @@
 
 
 ## 📞 Contact
-<a href="yesjm.dev@gmail.com">
+<a href="mailto:yesjm.dev@gmail.com">
   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
 </a>
 <a href="https://velog.io/@jeongmin78">
