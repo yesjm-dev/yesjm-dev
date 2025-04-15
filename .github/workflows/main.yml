@@ -12,14 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: yoshi389111/github-profile-3d-contrib@0.9.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
       - name: Commit & Push
         run: |
           git config user.name yesjm-dev 
           git config user.email wudals0708@naver.com
-          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+          git remote set-url origin https://${{ secrets.TOKEN }}@github.com/${{ github.repository }}.git
           git add -A .
           git commit -m "generated" || echo "No changes to commit"
           git push origin HEAD
