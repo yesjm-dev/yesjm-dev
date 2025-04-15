@@ -19,6 +19,7 @@ jobs:
         run: |
           git config user.name yesjm-dev 
           git config user.email wudals0708@naver.com
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
           git add -A .
-          git commit -m "generated"
-          git push
+          git commit -m "generated" || echo "No changes to commit"
+          git push origin HEAD
